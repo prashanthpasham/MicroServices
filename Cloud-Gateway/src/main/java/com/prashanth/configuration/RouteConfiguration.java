@@ -15,7 +15,7 @@ public class RouteConfiguration {
 	@Bean
 	public RouteLocator getRoutes(RouteLocatorBuilder builder) {
 		return builder.routes()
-				.route("schoolapi",
+				.route("school",
 						r -> r.path("/school/**").filters(f -> f.filter(cloudFilter)).uri("lb://school-micro"))
 				.build();
 
