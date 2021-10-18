@@ -1,0 +1,16 @@
+server:
+  port: 9191
+spring:
+  application:
+    name: cloud-gateway
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://localhost:27017/schoolApp
+jwt:
+   secret: micro-service
+   token:
+     validity: 360000
+         
+        
+
